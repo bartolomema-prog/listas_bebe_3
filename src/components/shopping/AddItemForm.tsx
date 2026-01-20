@@ -113,7 +113,7 @@ export function AddItemForm({ onAddItem }: AddItemFormProps) {
 
     const priceNum = parseFloat(price) || 0;
     const finalName = name.trim();
-    const finalBrand = brand.trim() || undefined;
+    const finalBrand = brand.trim().toUpperCase() || undefined;
     const finalModel = model.trim() || undefined;
 
     // 1. Añadir el artículo a la lista actual inmediatamente

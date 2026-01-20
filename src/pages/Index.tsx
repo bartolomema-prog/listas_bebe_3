@@ -115,10 +115,7 @@ export default function Index() {
                 <Package className="h-4 w-4" />
                 Artículos
               </TabsTrigger>
-              <TabsTrigger value="gestion" className="flex-1 min-w-[100px] flex items-center gap-2" onClick={(e) => { e.preventDefault(); navigate('/gestion'); }}>
-                <Settings className="h-4 w-4" />
-                Gestión
-              </TabsTrigger>
+
             </TabsList>
 
             <TabsContent value="listas">
@@ -314,9 +311,7 @@ export default function Index() {
               <ProductsManager />
             </TabsContent>
 
-            <TabsContent value="gestion">
-              {/* Empty content as it navigates away */}
-            </TabsContent>
+
           </Tabs>
         </main>
 
